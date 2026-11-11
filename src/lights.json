@@ -1,0 +1,465 @@
+{
+ "about": "Spot lights of the lamp heads, in the site frame (X up, Y east, Z north).",
+ "lamps": [
+  {
+   "id": "AndoyaTowerA_Subpart_LatticeMastA1-0",
+   "target": "tuned",
+   "angle_to_lens_deg": 22.9,
+   "pos": [
+    24.68,
+    -18.209,
+    -1.183
+   ],
+   "dir": [
+    -0.1965,
+    0.7676,
+    -0.6101
+   ],
+   "range": 90.0,
+   "inner": 0.45,
+   "outer": 1.0,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 1501.0
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_LatticeMastA1-1",
+   "target": "tuned",
+   "angle_to_lens_deg": 59.9,
+   "pos": [
+    24.68,
+    -18.52,
+    -0.812
+   ],
+   "dir": [
+    -0.6319,
+    0.6781,
+    0.3753
+   ],
+   "range": 90.0,
+   "inner": 0.2,
+   "outer": 0.45,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 217.2
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_LatticeMastA1-2",
+   "target": "tuned",
+   "angle_to_lens_deg": 43.3,
+   "pos": [
+    24.68,
+    -18.685,
+    -1.267
+   ],
+   "dir": [
+    -0.8008,
+    -0.0494,
+    -0.5969
+   ],
+   "range": 90.0,
+   "inner": 0.2,
+   "outer": 0.45,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 579.3
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_LatticeMastA2-3",
+   "target": "tuned",
+   "angle_to_lens_deg": 55.3,
+   "pos": [
+    24.68,
+    28.8,
+    -41.266
+   ],
+   "dir": [
+    -0.8541,
+    -0.285,
+    -0.4351
+   ],
+   "range": 90.0,
+   "inner": 0.4,
+   "outer": 0.85,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 337.7,
+   "note": "outer cone narrowed to cut spill on the rock armour"
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_LatticeMastA2-4",
+   "target": "tuned",
+   "angle_to_lens_deg": 24.6,
+   "pos": [
+    24.68,
+    29.237,
+    -41.47
+   ],
+   "dir": [
+    -0.4267,
+    0.7912,
+    -0.4382
+   ],
+   "range": 90.0,
+   "inner": 0.3,
+   "outer": 0.7,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 4322.8
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_LatticeMastA2-5",
+   "target": "tuned",
+   "angle_to_lens_deg": 46.7,
+   "pos": [
+    24.68,
+    29.195,
+    -40.988
+   ],
+   "dir": [
+    -0.5504,
+    0.7387,
+    0.3891
+   ],
+   "range": 90.0,
+   "inner": 0.3,
+   "outer": 0.7,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 900.6
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_LatticeMastA3-6",
+   "target": "tuned",
+   "angle_to_lens_deg": 35.6,
+   "pos": [
+    24.68,
+    33.881,
+    6.2
+   ],
+   "dir": [
+    -0.683,
+    -0.0223,
+    -0.7301
+   ],
+   "range": 90.0,
+   "inner": 0.45,
+   "outer": 1.0,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 938.1
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_LatticeMastA3-7",
+   "target": "tuned",
+   "angle_to_lens_deg": 52.7,
+   "pos": [
+    24.68,
+    33.839,
+    6.681
+   ],
+   "dir": [
+    -0.853,
+    -0.2988,
+    0.4279
+   ],
+   "range": 90.0,
+   "inner": 0.25,
+   "outer": 0.6,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 377.1,
+   "note": "outer cone narrowed to cut spill on the rock armour"
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_LatticeMastA3-8",
+   "target": "tuned",
+   "angle_to_lens_deg": 11.4,
+   "pos": [
+    24.68,
+    33.443,
+    6.404
+   ],
+   "dir": [
+    -0.3222,
+    -0.8732,
+    -0.3657
+   ],
+   "range": 90.0,
+   "inner": 0.45,
+   "outer": 1.0,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 1501.0
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_PoleMastA1-9",
+   "target": "tuned",
+   "angle_to_lens_deg": 57.3,
+   "pos": [
+    22.4,
+    20.659,
+    16.722
+   ],
+   "dir": [
+    -0.2872,
+    -0.4064,
+    -0.8674
+   ],
+   "range": 90.0,
+   "inner": 0.45,
+   "outer": 1.0,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 1501.0
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_PoleMastA1-10",
+   "target": "tuned",
+   "angle_to_lens_deg": 50.8,
+   "pos": [
+    22.4,
+    21.351,
+    17.475
+   ],
+   "dir": [
+    -0.9529,
+    -0.2892,
+    0.0918
+   ],
+   "range": 90.0,
+   "inner": 0.3,
+   "outer": 0.7,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 377.1
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_PoleMastA2-11",
+   "target": "tuned",
+   "angle_to_lens_deg": 48.8,
+   "pos": [
+    22.4,
+    65.077,
+    -20.333
+   ],
+   "dir": [
+    -0.82,
+    0.3981,
+    -0.4112
+   ],
+   "range": 90.0,
+   "inner": 0.25,
+   "outer": 0.6,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 972.6,
+   "note": "outer cone narrowed to cut spill on the rock armour"
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_PoleMastA2-12",
+   "target": "tuned",
+   "angle_to_lens_deg": 59.4,
+   "pos": [
+    22.4,
+    66.1,
+    -20.29
+   ],
+   "dir": [
+    -0.8904,
+    -0.4042,
+    0.2092
+   ],
+   "range": 90.0,
+   "inner": 0.4,
+   "outer": 0.85,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 226.3,
+   "note": "outer cone narrowed to cut spill on the rock armour"
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_PoleMastA3-13",
+   "target": "tuned",
+   "angle_to_lens_deg": 13.3,
+   "pos": [
+    22.4,
+    3.474,
+    -37.948
+   ],
+   "dir": [
+    -0.5216,
+    0.8514,
+    -0.0555
+   ],
+   "range": 90.0,
+   "inner": 0.45,
+   "outer": 1.0,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 1501.0
+  },
+  {
+   "id": "AndoyaTowerA_Subpart_PoleMastA3-14",
+   "target": "tuned",
+   "angle_to_lens_deg": 56.6,
+   "pos": [
+    22.4,
+    3.083,
+    -37.002
+   ],
+   "dir": [
+    -0.9403,
+    -0.2071,
+    0.27
+   ],
+   "range": 90.0,
+   "inner": 0.3,
+   "outer": 0.7,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 226.3
+  },
+  {
+   "id": "AndoyaYard-0",
+   "target": "yard-free",
+   "angle_to_lens_deg": 0.0,
+   "pos": [
+    22.4,
+    42.735,
+    -63.416
+   ],
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": 60.0,
+   "inner": 0.5,
+   "outer": 0.9,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 600.0
+  },
+  {
+   "id": "AndoyaYard-1",
+   "target": "yard-free",
+   "angle_to_lens_deg": 0.0,
+   "pos": [
+    22.4,
+    54.305,
+    -49.627
+   ],
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": 60.0,
+   "inner": 0.5,
+   "outer": 0.9,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 600.0
+  },
+  {
+   "id": "AndoyaYard-2",
+   "target": "yard-free",
+   "angle_to_lens_deg": 0.0,
+   "pos": [
+    22.4,
+    50.395,
+    -69.844
+   ],
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": 60.0,
+   "inner": 0.5,
+   "outer": 0.9,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 600.0
+  },
+  {
+   "id": "AndoyaYard-3",
+   "target": "yard-free",
+   "angle_to_lens_deg": 0.0,
+   "pos": [
+    22.4,
+    61.966,
+    -56.055
+   ],
+   "dir": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "range": 60.0,
+   "inner": 0.5,
+   "outer": 0.9,
+   "color": [
+    1.0,
+    0.93,
+    0.8
+   ],
+   "intensity": 600.0
+  }
+ ]
+}

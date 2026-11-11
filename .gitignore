@@ -1,0 +1,26 @@
+# Blender and bake sources must never reach this repo
+*.blend
+*.blend1
+*.blend2
+*.exr
+source/
+sets/
+refs/
+private/
+render/
+tests/
+
+# Build output and caches
+bin/
+obj/
+*.dll
+*.pdb
+__pycache__/
+*.pyc
+.build-manifest.txt
+
+# Local files
+.vs/
+*.user
+Thumbs.db
+dist/

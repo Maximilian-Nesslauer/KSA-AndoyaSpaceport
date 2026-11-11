@@ -1,0 +1,9 @@
+<Project>
+  <!-- Machine settings (KsaDir, StarMapDir, BuildRoot) may come from Local.build.props, which is not part of the published source. -->
+  <Import Project="$(MSBuildThisFileDirectory)Local.build.props" Condition="Exists('$(MSBuildThisFileDirectory)Local.build.props')" />
+  <PropertyGroup>
+    <BuildRoot Condition="'$(BuildRoot)' == ''">$(MSBuildThisFileDirectory)build\</BuildRoot>
+    <BaseOutputPath>$(BuildRoot)bin\</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(BuildRoot)obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>

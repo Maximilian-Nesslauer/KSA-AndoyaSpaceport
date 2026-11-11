@@ -1,0 +1,11 @@
+name = "Andoya Spaceport"
+version = "1.0.0"
+description = "A launch site at Andoya in northern Norway: one launch pad on a quay at the coast, with an access tower, light masts and lamps that light the pad at night, pipe racks, a tank farm and a hall. Needs StarMap."
+
+# The second file patches the stock Earth row: it adds the Landmark of the launch site and the terrain decal under it.
+assets = [ "AndoyaSpaceportAssets.xml", "AndoyaSpaceportLaunchSite.xml" ]
+
+# The code part lights the lamp masts at night (a static object cannot hold a light) and draws the site into the sun
+# shadow map (the game draws no static object there). StarMap loads it.
+[StarMap]
+EntryAssembly = "AndoyaSpaceport"

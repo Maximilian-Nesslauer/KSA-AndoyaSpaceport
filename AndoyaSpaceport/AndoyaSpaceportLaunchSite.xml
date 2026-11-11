@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Andoya Spaceport: adds the launch site to Earth. This file patches the stock Earth row: Modify="Extend" adds the
+  Landmark to the Locations list and a terrain decal to the terrain Modifiers, and keeps every stock entry.
+
+  The site stands at the water of the game coast, about 1 km west-north-west of the real pad, because the game
+  terrain at the real coordinates is a hillside. The decal is flat inside Radius x (1 - SmoothFactor), here 116.2 m,
+  and blends into the ground at Radius. Its centre lies 78 m inland along the pad axis, so the flat circle holds
+  the whole site. AltitudeOffset carries the attribute Km, but the terrain code reads the number as metres.
+-->
+<Assets>
+  <AtmosphericBody Id="Earth" Modify="Patch">
+    <Locations Modify="Extend">
+      <Landmark Key="Andoya Spaceport" IsLaunchPad="true">
+        <Latitude Degrees="69.11273" />
+        <Longitude Degrees="15.56420" />
+        <StaticObject Ref="AndoyaSpaceport_Prefab_Pad" />
+      </Landmark>
+    </Locations>
+    <Terrain Modify="Patch">
+      <ProceduralModifiers Modify="Patch">
+        <Modifiers Modify="Extend">
+          <Decal Key="LaunchSite_AndoyaSpaceport">
+            <Amplitude Value="0" />
+            <Order Value="9999" />
+
+            <Radius Value="136.2" />
+            <Rotation Degrees="0" />
+            <Location Key="AndoyaSpaceport">
+              <Latitude Degrees="69.11229" />
+              <Longitude Degrees="15.56574" />
+            </Location>
+
+            <AltitudeOffset Km="4" />
+            <SmoothFactor Value="0.147" />
+            <Additive Value="false" />
+
+            <HeightMap Ref="Circle" />
+          </Decal>
+        </Modifiers>
+      </ProceduralModifiers>
+    </Terrain>
+  </AtmosphericBody>
+</Assets>

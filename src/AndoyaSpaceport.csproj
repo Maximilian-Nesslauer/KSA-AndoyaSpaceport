@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    The code part of the mod Andoya Spaceport: it lights the launch site at night. A static object cannot hold a
+    Light and its shader has no emissive term (StaticObject.frag), so the mod adds the light instances of the lamp
+    heads itself, in a postfix of StaticObject.UpdateRenderData. It also draws the site into the sun shadow map
+    (SiteShadows.cs), because the game draws no static object there; the vertex shader of that pass is
+    StaticObjectShadowCSM.vert, which make_site_mod.py copies into the mod folder.
+
+    Build:  dotnet build -c Release -maxcpucount:4 -nologo [-p:KsaDir=<folder>] [-p:StarMapDir=<folder>]
+            [-p:DeployDir=<folder>] [-p:ShadowProfile=true]
+    KsaDir is the KSA install folder (the one with KSA.dll) and StarMapDir the folder with 0Harmony.dll. Both default to
+    the environment variables KSA_DIR and STARMAP_DIR. A file Local.build.props next to this project, which is not part
+    of the published source, may set them too.
+    The build writes AndoyaSpaceport.dll and lights.json into DeployDir, by default the mod folder ../AndoyaSpaceport
+    that make_site_mod.py writes; make_site_mod.sh runs this build after it. ShadowProfile=true makes a test build
+    that logs the cost of the shadow pass (ShadowProfile.cs); never ship it.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>AndoyaSpaceport</AssemblyName>
+    <RootNamespace>AndoyaSpaceport</RootNamespace>
+    <KsaDir Condition="'$(KsaDir)' == ''">$(KSA_DIR)</KsaDir>
+    <StarMapDir Condition="'$(StarMapDir)' == ''">$(STARMAP_DIR)</StarMapDir>
+    <DeployDir Condition="'$(DeployDir)' == ''">$(MSBuildProjectDirectory)\..\AndoyaSpaceport\</DeployDir>
+    <Deterministic>true</Deterministic>
+    <DebugType>none</DebugType>
+    <PathMap>$(MSBuildProjectDirectory)=src</PathMap>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants Condition="'$(ShadowProfile)' == 'true'">$(DefineConstants);ANDOYA_SHADOW_PROFILE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StarMap.API" Version="0.3.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="KSA"><HintPath>$(KsaDir)\KSA.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Brutal.Numerics"><HintPath>$(KsaDir)\Brutal.Numerics.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Brutal.Logging"><HintPath>$(KsaDir)\Brutal.Logging.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Brutal.Core"><HintPath>$(KsaDir)\Brutal.Core.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="BepuUtilities"><HintPath>$(KsaDir)\BepuUtilities.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Planet.Render.Core"><HintPath>$(KsaDir)\Planet.Render.Core.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Brutal.Vulkan.Abstractions"><HintPath>$(KsaDir)/Brutal.Vulkan.Abstractions.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Brutal.Vulkan"><HintPath>$(KsaDir)\Brutal.Vulkan.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Brutal.Memory"><HintPath>$(KsaDir)\Brutal.Memory.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(StarMapDir)\0Harmony.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="*.py;*.json" />
+  </ItemGroup>
+
+  <Target Name="CheckGameFolders" BeforeTargets="ResolveAssemblyReferences" Condition="!Exists('$(KsaDir)\KSA.dll') Or !Exists('$(StarMapDir)\0Harmony.dll')">
+    <Error Text="Set KsaDir (folder with KSA.dll) and StarMapDir (folder with 0Harmony.dll), as properties or as the environment variables KSA_DIR and STARMAP_DIR." />
+  </Target>
+
+  <Target Name="DeployLights" AfterTargets="Build">
+    <MakeDir Directories="$(DeployDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(DeployDir)" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\lights.json" DestinationFolder="$(DeployDir)" />
+  </Target>
+
+</Project>
