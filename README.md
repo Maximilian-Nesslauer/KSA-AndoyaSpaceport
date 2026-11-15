@@ -47,4 +47,4 @@ Code and game data: MIT ([LICENSE](LICENSE)). Meshes, textures and pictures: CC 
 
 ## Links
 
-[Forum thread](https://forums.ahwoo.com/threads/andoya-spaceport.ID/) | [Issues](https://github.com/Maximilian-Nesslauer/KSA-AndoyaSpaceport/issues)
+[Forum thread](https://forums.ahwoo.com/forums/kitten-space-agency/mod-releases/andoya-spaceport.1635/) | [Issues](https://github.com/Maximilian-Nesslauer/KSA-AndoyaSpaceport/issues)
