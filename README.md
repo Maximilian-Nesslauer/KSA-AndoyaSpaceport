@@ -2,7 +2,9 @@
 
 A launch site for [Kitten Space Agency](https://ahwoo.com/app/100000/kitten-space-agency) at Andoya, an island in northern Norway at 69 degrees north. It adds "Andoya Spaceport" to the launch site list of the vehicle editor. No stock launch site is changed.
 
-Validated against KSA build version 2026.11.10.5801.
+## Compatibility
+
+Validated against KSA build version **2026.11.16.5901**.
 
 [![Watch the Prisma launch video](https://img.youtube.com/vi/jkoOCArH9X4/maxresdefault.jpg)](https://youtu.be/jkoOCArH9X4)
 
@@ -28,7 +30,7 @@ The layout of the pad and the tank farm follows public aerial pictures; the othe
 
 ## Install
 
-Requires [StarMap](https://github.com/StarMapLoader/StarMap) for the lamps and the shadows. Without it the site exists, but stays dark and has no shadows.
+The launch site works with the base game. For pad lamps and site shadows, install [StarMap](https://github.com/StarMapLoader/StarMap).
 
 - Borea: install Andoya Spaceport from the content list.
 - By hand: copy `AndoyaSpaceport` from the release zip into `Documents/My Games/Kitten Space Agency/mods/` and enable it.
