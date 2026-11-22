@@ -26,7 +26,7 @@ Validated against KSA build version **2026.11.16.5901**.
 
 Keep legs, fins and boosters within about 15 m of the vehicle axis; a base wider than about 28 m does not fit the pad. At 69 degrees north the sun does not rise for some weeks around the winter solstice, so a new game can start in the dark.
 
-The layout of the pad and the tank farm follows public aerial pictures; the other sizes are estimates. The site stands about 1 km west-north-west of the real pad, because the game terrain there is a hillside.
+The layout of the pad and the tank farm follows public aerial pictures; the other sizes are estimates. The site stands about 1.5 km west-north-west of the real pad, because the game terrain there is a hillside.
 
 ## Install
 

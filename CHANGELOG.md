@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0
+
+- Move the launch site about 390 m north-west to the new coast of KSA 2026.11.16.5901. In this game build the terrain at the old place changed, and the pad stood in a pit about 16 m deep, away from the water. The pad, the buildings, the lamps and the colliders are the same as in 1.0.2.
+- Saves: a vehicle that stands on the pad or near the site in a save from 1.0.x stays at its old position, which is now inside the ground. Launch or recover such vehicles before you update, or start them again from the launch menu. New launches use the new pad.
+
 ## 1.0.2
 
 - Update the documented game build to KSA 2026.11.16.5901. No functional changes.
