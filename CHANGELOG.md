@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+- Mark the mod as compatible with KSA 2026.11.25.5949. No functional changes.
+
 ## 1.1.0
 
 - Move the launch site about 390 m north-west to the new coast of KSA 2026.11.16.5901. In this game build the terrain at the old place changed, and the pad stood in a pit about 16 m deep, away from the water. The pad, the buildings, the lamps and the colliders are the same as in 1.0.2.
