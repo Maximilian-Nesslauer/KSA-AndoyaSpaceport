@@ -1,6 +1,6 @@
 # Andoya Spaceport
 
-A launch site for Kitten Space Agency at Andoya in northern Norway. It adds "Andoya Spaceport" to the launch site list of the vehicle editor; no stock site is changed. Made for KSA build 2026.11.16.5901.
+A launch site for Kitten Space Agency at Andoya in northern Norway. It adds "Andoya Spaceport" to the launch site list of the vehicle editor; no stock site is changed. Made for KSA build 2026.11.25.5949.
 
 - One launch pad on a quay with a flame trench to the sea, an access tower, light masts, pipe racks, a tank farm, containers and a hall.
 - Lamps light the pad at night and fade in when the sun sinks below 8 degrees.
